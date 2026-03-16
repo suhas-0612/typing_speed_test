@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typing Speed Test Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Typing Speed Test</h1>
+
+<div class="selection-container">
+<div class="select-group">
+<label for="topic">Select Topic:</label>
+<select id="topic">
+<option value="literature">Literature</option>
+<option value="science">Science</option>
+<option value="technology">Technology</option>
+<option value="history">History</option>
+<option value="nature">Nature</option>
+</select>
+</div>
+
+<div class="select-group">
+<label for="duration">Select Duration:</label>
+<select id="duration">
+<option value="30">30 seconds</option>
+<option value="60">1 minute</option>
+<option value="120">2 minutes</option>
+<option value="300">5 minutes</option>
+<option value="600">10 minutes</option>
+</select>
+</div>
+</div>
+
+<p id="sentence"></p>
+
+<div id="progress-container">
+<div id="progress"></div>
+</div>
+
+<textarea id="input" placeholder="Start typing here..."></textarea>
+
+<div class="stats">
+<p>Time: <span id="time">60</span>s</p>
+<p>WPM: <span id="wpm">0</span></p>
+<p>Accuracy: <span id="accuracy">0</span>%</p>
+</div>
+
+<div id="save-score-section" style="display:none; margin-top:20px;">
+<input type="text" id="player-name" placeholder="Enter your name" maxlength="20" style="padding:8px; border-radius:6px; border:none; width:150px; margin-right:10px;">
+<button id="save-score">Save Score</button>
+</div>
+
+<div class="buttons">
+<button id="restart">Restart</button>
+<button id="theme">Toggle Theme</button>
+<button id="clear-leaderboard">Clear Leaderboard</button>
+</div>
+
+<h2>Leaderboard</h2>
+
+<table id="leaderboard">
+
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>WPM</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
